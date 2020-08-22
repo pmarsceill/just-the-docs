@@ -16,7 +16,7 @@
 title: Just the Docs
 description: A Jekyll theme for documentation
 baseurl: "/just-the-docs" # the subpath of your site, e.g. /blog
-url: "https://pmarsceill.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jeffreycwitt.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
@@ -65,6 +65,9 @@ aux_links_new_tab: false
 # Sort order for navigation links
 nav_sort: case_insensitive # default, equivalent to nil
 # nav_sort: case_sensitive # Capital letters sorted before lowercase
+
+# Display next and previous links
+nav_next_prev: false
 
 # Footer content
 # appears at the bottom of every page's main content

@@ -1,0 +1,14 @@
+<nav aria-label="Breadcrumb" class="next-prev-nav">
+  <ol class="next-prev-nav-list">
+  {%- if previous_page -%}
+    <li class="next-prev-nav-list-item">
+      <a href="{{ previous_page.url | absolute_url }}">Previous</a>
+    </li>
+  {%- endif -%}
+  {%- if next_page -%}
+    <li class="next-prev-nav-list-item">
+      <a href="{{ next_page.url | absolute_url }}">Next</a> 
+    </li>
+  {%- endif -%}
+  </ol>
+</nav>
