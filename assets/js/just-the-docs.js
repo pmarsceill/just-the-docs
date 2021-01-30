@@ -468,4 +468,23 @@ jtd.onReady(function(){
 
 })(window.jtd = window.jtd || {});
 
+{% if site.dark_color_scheme %}
+    if (window.matchMedia) {
+        window.matchMedia('(prefers-color-scheme: dark)')
+              .addEventListener('change', event => {
+          if (event.matches) {
+              jtd.setTheme('{{site.dark_color_scheme}}');
+          } else {
+              jtd.setTheme('{{site.color_scheme}}');
+          }
+        });
+    
+        if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            jtd.setTheme('{{site.dark_color_scheme}}');
+        }
+    }
+{% endif %}
+
 {% include js/custom.js %}
+
+
