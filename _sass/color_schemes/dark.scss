@@ -11,7 +11,13 @@ $link-color: $blue-000;
 $btn-primary-color: $blue-200;
 $base-button-color: $grey-dk-250;
 
-$code-background-color: $grey-dk-250;
 $search-background-color: $grey-dk-250;
 $table-background-color: $grey-dk-250;
 $feedback-color: darken($sidebar-color, 3%);
+
+//
+// The following highlight theme is more legible than that used for the light color scheme
+//
+
+@import "./vendor/pygments/css-github/pygments-tomorrow-night";
+$code-background-color: #1d1f21;
